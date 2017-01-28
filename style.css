@@ -1,0 +1,27 @@
+body {
+    font-family: "Calibri";
+}
+
+#header {
+    background-color: #eeeeee;
+    height: 40px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+#file2 {
+    background-color: #eeeeee;
+}
+#snap2{
+
+    background-color: #eeeeee;
+    border:1px solid #bbbbbb;
+    height:40px;
+    width:80px;
+    cursor: pointer;
+    float: right;
+}
+#bodycontent
+{
+    width:340px;
+}
