@@ -1,13 +1,16 @@
 body {
     font-family: "Calibri";
     overflow-y: none;
+    background-color: #f7f7f7; 
 }
 
 #header {
     background-color: #eeeeee;
-    height: 40px;
-    padding-top: 15px;
+    height: 59px;
+    padding-top: 1px;
     padding-left: 15px;
+    margin-top: -8px;
+    margin-left: -8px;
 }
 
 #file2 {
