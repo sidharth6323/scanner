@@ -49,6 +49,7 @@ function getBase64(file) {
     };
 }
 
+
 function resizeBase64Img(base64, width, height) {
     var canvas = document.createElement("canvas");
     canvas.width = width;
@@ -89,7 +90,7 @@ $("#snap2").click(function() {
                     $("#matchp").show();
                     $("#status").html("<p>done</p>");
                     $("#content").html("<p> Captured Text<br><br>" + window.datanew["ParsedResults"][0]["ParsedText"] + "</p>");
-                    $("#match").html(similarity(str2,window.datanew["ParsedResults"][0]["ParsedText"])*100+"%");
+                    $("#match").html(similarity(str2.trim(),window.datanew["ParsedResults"][0]["ParsedText"].trim())*100+"%");
                     console.log(similarity(str2,window.datanew["ParsedResults"][0]["ParsedText"]));
 
                 })
