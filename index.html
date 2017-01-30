@@ -90,8 +90,9 @@ $("#snap2").click(function() {
                     $("#matchp").show();
                     $("#status").html("<p>done</p>");
                     $("#content").html("<p> Captured Text<br><br>" + window.datanew["ParsedResults"][0]["ParsedText"] + "</p>");
-                    $("#match").html(similarity(str2.trim(),window.datanew["ParsedResults"][0]["ParsedText"].trim())*100+"%");
-                    console.log(similarity(str2,window.datanew["ParsedResults"][0]["ParsedText"]));
+                    str3=window.datanew["ParsedResults"][0]["ParsedText"].split("\n").join("").split("\r").join("");
+                    $("#match").html(similarity(str2.trim(),str3.trim())*100+"%");
+                    console.log(similarity(str2.trim(),str3.trim()));
 
                 })
                 .fail(function() {
